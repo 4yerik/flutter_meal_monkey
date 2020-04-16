@@ -204,7 +204,7 @@ class _PlanScreenState extends State<PlanScreen> {
 
         ),
       ),
-    )
+    );
   }
 
   selectCard(cardTitle) {
