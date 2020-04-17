@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -29,15 +30,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
 
   final String title;
 
@@ -187,14 +179,14 @@ Widget _buildFoodItem(String imgPath, String foodName, String price, BuildContex
               Container(
                   child: Row(
                 children: [
-                  Hero(
-                      tag: imgPath,
-                      child: Image(
-                        image: AssetImage(imgPath),
-                        fit: BoxFit.contain,
-                        height: 75.0,
-                        width: 75.0,
-                      )),
+//                  Hero(
+//                      tag: imgPath,
+//                      child: Image(
+//                        image: AssetImage(imgPath),
+//                        fit: BoxFit.contain,
+//                        height: 75.0,
+//                        width: 75.0,
+//                      )),
                   CircleAvatar(
                     radius: 35.0,
                     backgroundImage: AssetImage(imgPath),
