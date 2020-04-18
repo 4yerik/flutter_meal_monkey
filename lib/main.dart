@@ -75,7 +75,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 IconButton(
                   icon: Icon(Icons.arrow_back_ios),
                   color: Colors.white,
-                  onPressed: () {},
+
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => PlanScreen(heroTag: imgPath, foodName: foodName, foodPrice: price,
+                      ),
+                    ),
+                  ),
                 ),
                 Container(
                   width: 125.0,
