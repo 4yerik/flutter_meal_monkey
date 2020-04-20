@@ -88,6 +88,7 @@ class _FruitScreenState extends State<FruitScreen> with SingleTickerProviderStat
                 new Fruit(),
                 new Fruit(),
                 new Fruit(),
+                new Fruit(),
               ],
             ),
           )

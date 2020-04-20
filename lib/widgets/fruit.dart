@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -14,19 +12,22 @@ class _FruitState extends State<Fruit> {
     return ListView(
       scrollDirection: Axis.horizontal,
       children: <Widget>[
-        _buildFoodCard('assets/avocado.png', 'Large single avocado freshly imported from California', '18.55', cardColor)
+        _buildFoodCard('assets/avocado.png', 'Large single avocado freshly imported from California', '18.55', Colors.lightGreen),
+        _buildFoodCard('assets/avocado.png', 'Large single avocado freshly imported from California', '18.55', Colors.lightGreen),
+        _buildFoodCard('assets/avocado.png', 'Large single avocado freshly imported from California', '18.55', Colors.lightGreen),
+        _buildFoodCard('assets/avocado.png', 'Large single avocado freshly imported from California', '18.55', Colors.lightGreen)
       ],
     );
   }
 
-  Widget _buildFoodCard(String imgPath, String description, String price, String cardColor) {
+  Widget _buildFoodCard(String imgPath, String description, String price, Color cardColor) {
     return Padding(
       padding: EdgeInsets.all(12.0),
       child: Container(
         height: 100.0,
         width: 200.0,
         decoration: BoxDecoration(
-          color: Color(int.parse(cardColor)),
+          color: cardColor,
           borderRadius: BorderRadius.circular(15.0),
         ),
         child: Column(
